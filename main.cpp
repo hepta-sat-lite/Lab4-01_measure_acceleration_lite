@@ -11,7 +11,7 @@ int main()
     sensor.set_up();
     for(int i = 0; i < 50; i++){
         sensor.sen_acc(&ax,&ay,&az);
-        pc.printf("acc : %f,%f,%f\r\n",ax,ay,az);
+        pc.printf("%f,%f,%f\r\n",ax,ay,az);
         wait_ms(1000);
     }
 }
