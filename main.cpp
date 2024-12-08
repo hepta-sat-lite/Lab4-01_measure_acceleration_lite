@@ -7,6 +7,7 @@ RawSerial pc(USBTX,USBRX,9600);
 int main()
 {
     float ax,ay,az;
+    pc.printf("Acceleration Sensor\r\n");
     eps.turn_on_regulator();
     sensor.set_up();
     for(int i = 0; i < 10; i++){
